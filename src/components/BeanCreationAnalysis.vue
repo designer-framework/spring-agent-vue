@@ -51,8 +51,10 @@
             </div>
 
             <span slot="reference">
-              <span class="bean-name"></span>
-              {{ scope.row.name }}
+              <span :style="scope.row.children.length > 0 ? `` : `margin-left: 28px;`"></span>
+              <span class="bean-name">
+                {{ scope.row.name }}
+              </span>
             </span>
 
           </el-popover>
@@ -201,8 +203,8 @@ export default {
 
 .bean-name {
   border-left: 2px solid deepskyblue;
-  margin-left: 3px;
-  margin-right: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .text {
