@@ -106,7 +106,7 @@ export default {
   data() {
     return {
       loading: true,
-      defaultSort: {prop: 'duration', order: 'descending'},
+      defaultSort: {prop: 'actualDuration', order: 'descending'},
       search: {
         beanName: '',
         duration: 100
