@@ -157,7 +157,7 @@ export default {
     getTableData() {
       return this.beanInitResultList.filter(data => {
 
-        if (data.duration < this.search.duration) {
+        if (data.actualDuration < this.search.duration) {
           return false;
         }
 

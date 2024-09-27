@@ -2,7 +2,7 @@
   <div v-loading="loading" class="spring-analysis el-container">
     <el-container>
       <el-header height="100px">
-        SpringAgent 应用启动耗时统计
+        SpringAgent 应用启动耗时统计分析
       </el-header>
       <el-container>
         <el-main>
@@ -81,7 +81,7 @@
                       class="card_title">方法调用耗时统计(包含<strong
                       style="color: #67c23a; font: 17px bold;">组件耗时统计</strong>和<strong
                       style="color: #67c23a; font: 17px bold;">Bean创建耗时统计</strong>及<strong
-                      style="color: #67c23a; font: 17px bold;">配置文件中新增的插桩方法</strong>的全限定方法名, 可能存在重叠的耗时统计)</span>
+                      style="color: #67c23a; font: 17px bold;">方法调用耗时统计</strong>的全限定方法名, 可能存在重叠的耗时统计)</span>
                   </div>
                   <div>
                     <MethodInvokeAnalysis :methodInvokeDetailList="tableData.methodInvokeDetailList"/>
