@@ -31,8 +31,10 @@
               </el-table-column>
               <el-table-column
                 :show-overflow-tooltip="true"
-                label="入参/类名"
-                prop="args">
+                label="入参/类名">
+                <template slot-scope="scope">
+                  {{ scope.row.args }}
+                </template>
               </el-table-column>
               <el-table-column
                 label="耗时/ms"

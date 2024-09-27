@@ -136,7 +136,7 @@ export default {
           type: 'scroll', //滚动
           //orient: 'vertical', //Title摆放位置
           center: 1,
-          bottom: 20,
+          top: 20,
           emphasis: {
             selectorLabel: {
               lineHeight: 200
